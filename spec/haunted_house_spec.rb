@@ -28,13 +28,13 @@ describe "HauntedHouse" do
   end
 
   it "has an opening_date (datetime)" do
-    sept_27th = Date.new(2014, 9, 27)
+    sept_27th = DateTime.new(2014, 9, 27)
     asylum.update(opening_date: sept_27th)
     expect(asylum.opening_date).to eq(sept_27th)
   end
 
   it "has a closing_date (datetime)" do
-    nov_2nd = Date.new(2014, 9, 27)
+    nov_2nd = DateTime.new(2014, 11, 2)
     asylum.update(closing_date: nov_2nd)
     expect(asylum.closing_date).to eq(nov_2nd)
   end
